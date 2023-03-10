@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <title>
+            Developer Survey Form
+        </title>
+    </head>
+    <body id="big-container">
+            <main id="container">
+                <header>
+                    <h1 id="title">
+                        Developer Survey Form
+                    </h1>
+                    <p id="description">
+                        Thank you for taking the time to help us improve the platform
+                    </p>
+                </header>
+                <form id="survey-form" action="">
+                    <div class="form-group">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number" id="number-label">
+                            Age
+                            <span class="small-span">
+                                (opcional)
+                            </span>
+                        </label>
+                        <input type="number" name="age" id="number" placeholder="Enter Your Age" class="form-control" min="1" max="120">
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            Which option best describes your current role?
+                        </p>
+                        <select name="role" id="dropdown" class="form-control" required>
+                            <option disabled selected value>Select Current Role</option>
+                            <option value="Front">Front-End Developer</option>
+                            <option value="Back">Back-End Developer</option>
+                            <option value="Full">Full-Stack Developer</option>
+                            <option value="PreferNo">Prefer Not To Say</option>
+                            <option value="Others">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            Would you recommend being a Developer to a friend?    
+                        </p>
+                        <label for="radio" id="radio-label">
+                            <input type="radio" value="Definitely" name="user-recommend" id="radio" class="input-radio" checked>
+                            Definitely
+                        </label>
+                        <label for="radio" id="radio-label">
+                            <input type="radio" value="Maybe" name="user-recommend" id="radio" class="input-radio">
+                            Maybe
+                        </label>
+                        <label for="radio" id="radio-label">
+                            <input type="radio" value="Not sure" name="user-recommend" id="radio" class="input-radio">
+                            Not sure
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            What is your favorite role of being a Developer?
+                        </p>
+                        <select name="most-like" id="most-like" class="form-control" required>
+                            <option disabled selected value>Select An Option</option>
+                            <option value="Challenges">Challenges</option>
+                            <option value="Projects">Projects</option>
+                            <option value="Community">Community</option>
+                            <option value="Programs">The Programs</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            What would you like to improve?
+                            <span class="small-span">
+                                (Check all that apply)
+                            </span>
+                        </p>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Front-End" class="input-checkbox">
+                            Front-End
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Back-End" class="input-checkbox">
+                            Back-End
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Data-Visualization" class="input-checkbox">
+                            Data Visualization
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Challenges" class="input-checkbox">
+                            Challenges
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Community" class="input-checkbox">
+                            Community
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Code-Organization" class="input-checkbox">
+                            Code Organization
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Code-Formatting" class="input-checkbox">
+                            Code Formatting
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Remove-Unnecessary-Code" class="input-checkbox">
+                            Remove Unnecessary Code
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Write-Speed" class="input-checkbox">
+                            Write Speed
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Servers" class="input-checkbox">
+                            Servers
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" name="prefer" id="checkbox" value="Programming-Languages" class="input-checkbox">
+                            Learn More Programming Languages
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            Any comments or suggestions?
+                        </p>
+                        <textarea name="comment" id="comments" cols="30" rows="8" class="input-textarea" placeholder="Enter Your Comment Here..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+                <footer>
+                    <h3 id="important-information">
+                        ¡IMPORTANT INFORMATION!
+                    </h3>
+                    <p id="footer-information">
+                        This page is part of a group of projects that I must program to obtain the certification of an online bootcamp that I am studying.
+                    </p>
+                    <p id="footer-information">
+                        This is part of a group of certification projects that will be included in my portfolio.
+                    </p>
+                    <br>
+                    &copy; Waren Sánchez, 2023
+                </footer>
+            </main>
+    </body>
+</html>
